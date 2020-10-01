@@ -12,10 +12,12 @@ import UIKit
 class ResultViewController: UIViewController {
 
     @IBOutlet weak var correctAnswer: UILabel!
+    var quizCount = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print(quizCount)
+        correctAnswer.text = quizCount + "問"
     }
     
     @IBAction func playAgainButton(_ sender: Any) {

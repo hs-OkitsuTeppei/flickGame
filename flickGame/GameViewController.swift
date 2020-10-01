@@ -30,7 +30,7 @@ class GameViewController: UIViewController {
     
     
     func presentTimer(){
-        Timer.scheduledTimer(timeInterval: 30.0,
+        Timer.scheduledTimer(timeInterval: 5.0,
                              target: self,
                              selector: #selector(timerUpdate),
                              userInfo: nil,
@@ -39,7 +39,8 @@ class GameViewController: UIViewController {
     
     @objc private func timerUpdate() {
         let storyboard = UIStoryboard(name: "GameView", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TimeUpView")
+        let vc = storyboard.instantiateViewController(withIdentifier: "TimeUpView") as! TimeUpViewController
+        vc.quizCount = self.quizCount.description
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
@@ -61,10 +62,6 @@ extension GameViewController: UITextFieldDelegate {
             textField.text = ""
             quizLabel.text = quizList[quizCount]
         }
-
-        // キーボードを閉じる
-        // textField.resignFirstResponder()
-        // textField.endEditing(true)
         return true
     }
 }

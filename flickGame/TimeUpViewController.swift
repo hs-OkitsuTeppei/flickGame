@@ -10,6 +10,7 @@ import UIKit
 
 class TimeUpViewController: UIViewController {
 
+    var quizCount = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -22,7 +23,8 @@ class TimeUpViewController: UIViewController {
     func moveToResult() {
         Thread.sleep(forTimeInterval: 1.0)
         let storyboard = UIStoryboard(name: "GameView", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "ResultView")
+        let vc = storyboard.instantiateViewController(withIdentifier: "ResultView") as! ResultViewController
+        vc.quizCount = self.quizCount
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
