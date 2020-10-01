@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF3D24D925258957001E61E1 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = EF3D24D825258957001E61E1 /* .swiftlint.yml */; };
 		EF54928F24C417A000B3E510 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF54928E24C417A000B3E510 /* GameViewController.swift */; };
 		EF54929124C417E400B3E510 /* GameView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF54929024C417E400B3E510 /* GameView.storyboard */; };
 		EF54929524C41BA700B3E510 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF54929424C41BA700B3E510 /* Quiz.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF3D24D825258957001E61E1 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		EF54928E24C417A000B3E510 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		EF54929024C417E400B3E510 /* GameView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = GameView.storyboard; path = ../GameView.storyboard; sourceTree = "<group>"; };
 		EF54929424C41BA700B3E510 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 		EF8364C324BDE44B0066EA81 = {
 			isa = PBXGroup;
 			children = (
+				EF3D24D825258957001E61E1 /* .swiftlint.yml */,
 				EF8364CE24BDE44B0066EA81 /* flickGame */,
 				EF8364CD24BDE44B0066EA81 /* Products */,
 			);
@@ -92,6 +95,7 @@
 				EF8364C824BDE44B0066EA81 /* Sources */,
 				EF8364C924BDE44B0066EA81 /* Frameworks */,
 				EF8364CA24BDE44B0066EA81 /* Resources */,
+				EFB1272E2525884B000663A2 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -140,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF3D24D925258957001E61E1 /* .swiftlint.yml in Resources */,
 				EF8364DC24BDE44C0066EA81 /* LaunchScreen.storyboard in Resources */,
 				EF8364D924BDE44C0066EA81 /* Assets.xcassets in Resources */,
 				EF8364D724BDE44B0066EA81 /* Main.storyboard in Resources */,
@@ -148,6 +153,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EFB1272E2525884B000663A2 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF8364C824BDE44B0066EA81 /* Sources */ = {

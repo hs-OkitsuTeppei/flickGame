@@ -19,7 +19,6 @@ class TimeUpViewController: UIViewController {
         super.viewDidAppear(animated)
         moveToResult()
     }
-    
     func moveToResult() {
         Thread.sleep(forTimeInterval: 1.0)
         let storyboard = UIStoryboard(name: "GameView", bundle: nil)
