@@ -16,6 +16,8 @@
 		EF8364D724BDE44B0066EA81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF8364D524BDE44B0066EA81 /* Main.storyboard */; };
 		EF8364D924BDE44C0066EA81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF8364D824BDE44C0066EA81 /* Assets.xcassets */; };
 		EF8364DC24BDE44C0066EA81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF8364DA24BDE44C0066EA81 /* LaunchScreen.storyboard */; };
+		EFB1272A252575AA000663A2 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB12729252575AA000663A2 /* ResultViewController.swift */; };
+		EFED693125256E4A00A45E6D /* TimeUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED693025256E4A00A45E6D /* TimeUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		EF8364D824BDE44C0066EA81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF8364DB24BDE44C0066EA81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF8364DD24BDE44C0066EA81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB12729252575AA000663A2 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		EFED693025256E4A00A45E6D /* TimeUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				EF8364D524BDE44B0066EA81 /* Main.storyboard */,
 				EF54928E24C417A000B3E510 /* GameViewController.swift */,
 				EF54929024C417E400B3E510 /* GameView.storyboard */,
+				EFB12729252575AA000663A2 /* ResultViewController.swift */,
+				EFED693025256E4A00A45E6D /* TimeUpViewController.swift */,
 				EF54929424C41BA700B3E510 /* Quiz.swift */,
 				EF8364D824BDE44C0066EA81 /* Assets.xcassets */,
 				EF8364DA24BDE44C0066EA81 /* LaunchScreen.storyboard */,
@@ -103,7 +109,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "okitsu teppei";
 				TargetAttributes = {
 					EF8364CB24BDE44B0066EA81 = {
@@ -150,8 +156,10 @@
 			files = (
 				EF54928F24C417A000B3E510 /* GameViewController.swift in Sources */,
 				EF54929524C41BA700B3E510 /* Quiz.swift in Sources */,
+				EFB1272A252575AA000663A2 /* ResultViewController.swift in Sources */,
 				EF8364D424BDE44B0066EA81 /* ViewController.swift in Sources */,
 				EF8364D024BDE44B0066EA81 /* AppDelegate.swift in Sources */,
+				EFED693125256E4A00A45E6D /* TimeUpViewController.swift in Sources */,
 				EF8364D224BDE44B0066EA81 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +212,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -264,6 +273,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
