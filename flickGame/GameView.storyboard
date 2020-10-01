@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BjH-w8-4Qv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="H36-1c-iTU">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BjH-w8-4Qv" customClass="GameViewController" customModule="flickGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L3w-a8-F9T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o7b-Bt-ibz">
+                                <rect key="frame" x="20" y="170" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="wellcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9k-nH-0W2">
+                                <rect key="frame" x="171" y="115" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="g9k-nH-0W2" firstAttribute="top" secondItem="Eqx-If-Zm4" secondAttribute="top" constant="71" id="0K1-gU-DEt"/>
+                            <constraint firstItem="o7b-Bt-ibz" firstAttribute="leading" secondItem="L3w-a8-F9T" secondAttribute="leadingMargin" id="GOj-re-QEz"/>
+                            <constraint firstItem="g9k-nH-0W2" firstAttribute="centerX" secondItem="o7b-Bt-ibz" secondAttribute="centerX" id="J2H-lL-xhg"/>
+                            <constraint firstItem="o7b-Bt-ibz" firstAttribute="centerX" secondItem="L3w-a8-F9T" secondAttribute="centerX" id="SID-Jz-p1F"/>
+                            <constraint firstItem="o7b-Bt-ibz" firstAttribute="top" secondItem="Eqx-If-Zm4" secondAttribute="top" constant="126" id="TAv-ix-o8s"/>
+                            <constraint firstItem="g9k-nH-0W2" firstAttribute="leading" secondItem="Eqx-If-Zm4" secondAttribute="leading" constant="171" id="oRJ-V8-drd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Eqx-If-Zm4"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="o7b-Bt-ibz" id="VjZ-2i-J1u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ia-2C-ixl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
