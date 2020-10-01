@@ -11,13 +11,11 @@ import UIKit
 
 class GameViewController: UIViewController {
 
-
     @IBOutlet weak var inputTextField: UITextField!
     @IBOutlet weak var quizLabel: UILabel!
     let quiz = Quiz()
     var quizList = [""]
     var quizCount = 0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("GameVC_viewDidLoad\n")
@@ -27,16 +25,13 @@ class GameViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         quizLabel.text = "タップして開始！"
     }
-    
-    
-    func presentTimer(){
+    func presentTimer() {
         Timer.scheduledTimer(timeInterval: 5.0,
                              target: self,
                              selector: #selector(timerUpdate),
                              userInfo: nil,
                              repeats: false)
     }
-    
     @objc private func timerUpdate() {
         let storyboard = UIStoryboard(name: "GameView", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "TimeUpView") as! TimeUpViewController
@@ -44,8 +39,6 @@ class GameViewController: UIViewController {
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
-    
-    
 }
 
 extension GameViewController: UITextFieldDelegate {

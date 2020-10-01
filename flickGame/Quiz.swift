@@ -9,17 +9,14 @@
 import Foundation
 
 class Quiz {
-    
     enum QuizLevel {
         case easy
         case nomal
         case hard
     }
-    
     let levelEasy = ["かに","たばこ","うさぎ","でんわ","にんげん","くま","けんだま","うま","さかな","みず","おかし","てがみ","えんぴつ","くすり","ふとん","ふくろ","はさみ","すもう","せっけん","やきゅう","どりょく","てぬぐい","てんぐ","やきとり","たまご","まぐろ","きかい","はがき","はなふだ","とうふ","なっとう","がっこう","かいしゃ","にほんご","えいご","かんとう","かんさい","あさ","よる","ひる"]
-    let levelNomal = ["運動","価格","公園","満員電車"]
-    let levelHard = ["心頭滅却","諭す","東雲","喧々諤々"]
-    
+    let levelNomal = ["運動", "価格", "公園", "満員電車"]
+    let levelHard = ["心頭滅却", "諭す", "東雲", "喧々諤々"]
     func setQuizList(level: QuizLevel) -> [String] {
         var quizList: [String]
         switch level {

@@ -1,0 +1,17 @@
+# 一行あたり文字数を300に
+line_length: 300
+
+# 無視するルール
+disabled_rules:
+# 英数字だけ or 小文字のみ大文字のみにする
+- variable_name
+
+# as!を許可
+- force_cast
+
+# コンマの後にスペース
+- comma
+
+# Optional Bindingを !=nilにして
+- unused_optional_binding
+

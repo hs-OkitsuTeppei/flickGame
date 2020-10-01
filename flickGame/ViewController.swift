@@ -21,4 +21,3 @@ class ViewController: UIViewController {
         self.present(GameVC, animated: true, completion: nil)
     }
 }
-
